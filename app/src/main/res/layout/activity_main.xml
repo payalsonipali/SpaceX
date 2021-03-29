@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fcfcfc"
+    android:layout_height="match_parent">
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/smallbluedoodle"
+        android:alpha="0.1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SpaceX Crew Members"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:id="@+id/text"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/quickmedium"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text"
+        android:id="@+id/recycler"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refresh"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="50dp"
+
+        app:cardBackgroundColor="#16304F"
+        android:outlineAmbientShadowColor="#BBBBBB"
+        android:outlineSpotShadowColor="#BBBBBB"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="40dp"
+            android:fontFamily="@font/quickmedium"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:text="Refresh"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="#16304F"
+        android:outlineAmbientShadowColor="#BBBBBB"
+        android:outlineSpotShadowColor="#BBBBBB"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentRight="true"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="40dp"
+            android:fontFamily="@font/quickmedium"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:text="Delete All"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
